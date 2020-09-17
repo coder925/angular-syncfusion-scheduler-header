@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectResourceComponent implements OnInit {
 
+  selected: string;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectResource(e: any): void
+  {
+    console.log('resource selected: ', e);
   }
 
 }
